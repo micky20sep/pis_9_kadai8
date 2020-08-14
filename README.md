@@ -23,10 +23,11 @@ $ git config --global user.email メールアドレス
 $ git remote add upstream https://github.com/Kahorin/pis_9_kadai8.git
 ```
 
-### ブランチ作成
+### ブランチ作成＆ブランチ確認
 
 ```
-$ git checkout -b {ブランチ名}
+$ git checkout -b 作成するブランチ名
+$ git branch -a
 ```
 
 ### 編集してpushする
@@ -36,7 +37,7 @@ $ git checkout -b {ブランチ名}
 ```
 $ git add .
 $ git commit -m "コミットメッセージ"
-$ git push origin {ブランチ名}
+$ git push origin 作成したブランチ名
 ```
 
 ### プルリクエスト作成
