@@ -46,3 +46,4 @@ Compare & pull requestボタン → Create pull requestボタン
 
 ### マージ（リポジトリオーナ）
 プルリクエストを確認してリポジトリオーナがmasterへmergeする
+★競合発生確認用の修正byかほりん
