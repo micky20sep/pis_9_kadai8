@@ -32,7 +32,7 @@ int main(void){
 		do{
 			z = scanf("%d", &a[i]);
 			/* err 0=false or 1=0以外=true のif else */
-			if(MIN_NUM-1<a[i] && a[i]<MAX_NUM+1){
+			if(MIN_NUM<=a[i] && a[i]<=MAX_NUM){
 				err = 0;
 				/* 以下、Kahorinさん発見?のerr3パターン+α対策 */
 				/* 数字を1つずつ入力させるために読み捨てる */
