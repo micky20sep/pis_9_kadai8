@@ -32,7 +32,7 @@ int main(void){
 		do{
 			z = scanf("%d", &a[i]);
 			/* err 0=false or 1=0以外=true のif else */
-			if(0<=a[i] && a[i]<=10){
+			if(MIN_NUM-1<a[i] && a[i]<MAX_NUM+1){
 				err = 0;
 				/* 以下、Kahorinさん発見?のerr3パターン+α対策 */
 				/* 数字を1つずつ入力させるために読み捨てる */
@@ -42,7 +42,7 @@ int main(void){
 					printf("※ 数字以外を入力しないでください。＞" );
 					scanf("%*s");
 					err = 1;
-				} else if(a[i]<0 || 10<a[i]){
+				} else if(a[i]<MIN_NUM || MAX_NUM<a[i]){
 					printf("※ %d～%d以外の数字が入力されています。再入力してください。＞", MIN_NUM, MAX_NUM);
 					err = 1;
 				} else {
