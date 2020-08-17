@@ -31,7 +31,7 @@ int main(void){
 
 	for (int i = 0; i < LENGTH; i++) {
 		printf("%dコ目の整数を入力してください。＞", i+1);
-		/* たぶんいろんな基本理念の延長で、なんとなくi - 1したくない等でdo while */
+		/* なんとなくi - 1したくないのでdo while */
 		do{
 			z = scanf("%d", &a[i]);
 			/* err 0=false or 1=0以外=true のif else */
@@ -49,7 +49,7 @@ int main(void){
 					printf("※ %d～%d以外の数字が入力されています。再入力してください。＞", MIN_NUM, MAX_NUM);
 					err = 1;
 				} else {
-					/* その他のデバッグが面倒なので、とりあえずelse */
+					/* その他のデバッグが面倒なので、とりあえずelseに放り込む? */
 					printf("※ 真面目にやってください。＞" );
 					err = 1;
 				}
