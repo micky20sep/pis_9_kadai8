@@ -1,8 +1,5 @@
-// ■改善案
-// ー文字コードで数字のみ→char to int
-
-
 #include<stdio.h>
+
 #define LENGTH 2 /* 入力する整数の数 */
 #define MIN_NUM 1 /* 入力可能整数の最小値 */
 #define MAX_NUM 10 /* 入力可能整数の最大値 */
